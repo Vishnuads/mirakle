@@ -207,7 +207,7 @@ const Login = ({ close }) => {
                                     <div className='bg-[#F6F6F6]'>
                                         <div className="px-8 py-3">
                                             <div className="flex items-center justify-center">
-                                                <img src={Logo} alt="Logo" className='w-32' />
+                                                <img src={Logo} alt="Logo" className='w-32' loading='lazy' />
                                             </div>
                                             {/* {error && <div className="login-error"><p>{error}</p></div>} */}
                                             <h1 className='text-3xl font-bold text-gray-900'>Welcome Back !</h1>
@@ -326,6 +326,7 @@ const Login = ({ close }) => {
                                 <div className="grid md:grid-cols-2 rounded-lg overflow-hidden ">
                                     <div className='hidden md:block '>
                                         <img
+                                        loading='lazy' 
                                             src={LoginImg}
                                             className='w-full h-full object-cover '
                                         />
