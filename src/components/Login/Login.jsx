@@ -1,13 +1,10 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Eye, EyeOff, X } from 'lucide-react';
-import LoginImg from '../../assets/images/onion.png';
-import LoginImg2 from '../../assets/images/login.png';
+import LoginImg from '../../assets/images/new/onion.webp';
+import LoginImg2 from '../../assets/images/new/login.webp';
 import Logo from '../../assets/images/logo.png';
-import loginValidation from '@/Vallidations/loginValidation';
 import signupValidation from '@/Vallidations/signupValidation';
-import useForm from '@/hooks/useForm';
 import ForgotPassword from './ForgotPassword';
-import ChangePassword from './ChangePassword';
 import { ProductListCreate } from '../../context/ClientContext';
 import { toast } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
