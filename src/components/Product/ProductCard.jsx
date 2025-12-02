@@ -32,7 +32,7 @@ const ProductCard = ({
   };
 
   return (
-    <div className=" bg-white rounded-2xl p-3  hover:-translate-y-2 transition-translate duration-300 overflow-hidden">
+    <div className=" bg-white rounded-2xl p-3 w-64 mx-auto  hover:-translate-y-2 transition-translate duration-300 overflow-hidden">
       <Link
         to={`/products/${product.productName.replace(/\s+/g, "-").toLowerCase()}/${product.title.replace(/\s+/g, "-").toLowerCase()}/${product._id}`}
         className="text-decoration-none"
@@ -44,7 +44,7 @@ const ProductCard = ({
             src={image}
             alt={title}
             loading="lazy"
-            className="w-full h-48 object-cover rounded-xl mb-3"
+            className="w-full md:h-48 h-64 object-cover rounded-xl mb-3"
           />
 
           {/* Favorite Button */}

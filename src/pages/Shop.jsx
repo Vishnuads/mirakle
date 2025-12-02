@@ -83,7 +83,7 @@ const Shop = () => {
           </div>
 
           {/* PRODUCT GRID */}
-          <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2'>
+          <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 '>
             {filteredProducts.length === 0 ? (
               <div className="col-span-full text-center py-10">
                 <p className="text-gray-600 text-lg font-medium">
@@ -92,7 +92,7 @@ const Shop = () => {
               </div>
             ) : (
               filteredProducts.map((product) => (
-                <div key={product._id} className='px-2 mb-3'>
+                <div key={product._id} className='px-3 mb-3'>
                   <ProductCard
                     product={product}
                     productId={product._id}
