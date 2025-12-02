@@ -117,7 +117,10 @@ const CartCard = () => {
                   checked={selectedItems.includes(key)}
                   onChange={() => handleSelectItem(item._id, item.netQuantity)}
                 />
-                <img src={item.images?.[0]} alt={item.title} className="md:w-32 w-24 h-24 object-cover rounded-lg" />
+                <img src={item.images?.[0]}
+                  alt={item.title}
+                  loading='lazy'
+                  className="md:w-32 w-24 h-24 object-cover rounded-lg" />
               </div>
 
               {/* Product Details */}
@@ -138,9 +141,9 @@ const CartCard = () => {
                       }}
                     >
                       {likedItems[item.productId || item._id]
-                       ? <Heart className="md:w-4 md:h-4 w-3 h-3 text-red-500 " color='#ff0000' weight="fill" /> 
-                       : <Heart className="md:w-4 md:h-4 w-3 h-3 text-gray-900" />}
-                     
+                        ? <Heart className="md:w-4 md:h-4 w-3 h-3 text-red-500 " color='#ff0000' weight="fill" />
+                        : <Heart className="md:w-4 md:h-4 w-3 h-3 text-gray-900" />}
+
                     </button>
                     <button
                       onClick={() => removeFromCart(item._id, item.netQuantity)}

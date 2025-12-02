@@ -21,7 +21,7 @@ const SectionBanner = ({title}) => {
     <>
       <section className='relative'>
         <div className='relative md:mt-20  mt-16 '>
-            <div className="absolute inset-0 bg-black/60"></div>
+            
             {coverImage.map((item,index) => {
               return(
                 <div key={index}>
@@ -29,6 +29,7 @@ const SectionBanner = ({title}) => {
                 </div>
               )
             })}
+            <div className="absolute inset-0 bg-black/60"></div>
             <div className="absolute top-1/2 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/2 text-white">
             <h1>{title}</h1>
             <p className='text-xs md:text-md w-full mb-0'>The Essence of Good Food, Born from Nature & Science</p>

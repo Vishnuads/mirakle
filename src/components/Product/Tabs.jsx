@@ -143,7 +143,7 @@ const Tabs = ({ product }) => {
                 </div>
                 {review &&
                   <AddReview productId={product} setReview={setReview} />}
-                <ReviewList productId={product} />
+                <ReviewList productId={product}  />
               </div>
             }
           </div>

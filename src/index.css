@@ -49,6 +49,42 @@ h1{
     height: 100vh;
   }
 }
+
+/* .slick-slider,
+.slick-list,
+.slick-track {
+    width: 100% !important;
+} */
+
+/* .slick-slide {
+    display: flex !important;
+    justify-content: center !important;
+} */
+/* 
+.slick-slider,
+.slick-list,
+.slick-track {
+  width: 100% !important;
+} */
+
+/* .slick-slide {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center;
+} */
+
+/* .slick-slide > div {
+  width: 100% !important;
+} */
+
+/* @media (max-width: 480px) {
+  .slick-slide {
+    width: 100% !important;
+    display: flex !important;
+  }
+} */
+
+
 /*
 Source - https://stackoverflow.com/a
 Posted by JayD, modified by community. See post 'Timeline' for change history

@@ -277,7 +277,7 @@ const Login = ({ close }) => {
                                                 {loading
                                                     ? <button
                                                         // type='submit'
-                                                        disabled
+                                                        disabled={loading}
                                                         className='w-full bg-[#49600d] text-white font-semibold py-3 rounded-3 transition-colors duration-200'
                                                     >
                                                         <div class="text-center">
@@ -326,7 +326,7 @@ const Login = ({ close }) => {
                                 <div className="grid md:grid-cols-2 rounded-lg overflow-hidden ">
                                     <div className='hidden md:block '>
                                         <img
-                                        loading='lazy' 
+                                            loading='lazy'
                                             src={LoginImg}
                                             className='w-full h-full object-cover '
                                         />
@@ -456,7 +456,7 @@ const Login = ({ close }) => {
                                                 {loading
                                                     ? <button
                                                         // type='submit'
-                                                        disabled
+                                                        disabled={loading}
                                                         className='w-full bg-[#49600d] text-white font-semibold py-3 rounded-3 transition-colors duration-200'
                                                     >
                                                         <div class="text-center">

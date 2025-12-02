@@ -38,6 +38,7 @@ function HomeBanner() {
             <div
               className="banner-slide"
               style={{ backgroundImage: `url(${slide.bannerImages?.[0]})` }}
+              loading="lazy"
             >
               
               <div className="banner-overlay"></div>

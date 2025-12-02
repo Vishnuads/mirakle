@@ -79,7 +79,8 @@ export default function Dummy() {
                                 <img
                                     src={product.images[selectedImage]}
                                     alt="Garlic Powder"
-                                    className="md:w-full  md:h-96  object-cover"
+                                    className="w-full  md:h-100 h-60 object-cover"
+                                    loading='lazy'
                                 />
                             </div>
 
@@ -95,6 +96,7 @@ export default function Dummy() {
                                             src={img}
                                             alt={`Garlic Powder view ${idx + 1}`}
                                             className="w-full h-28 object-cover"
+                                            loading='lazy'
                                         />
                                     </button>
                                 ))}

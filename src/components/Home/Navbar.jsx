@@ -111,7 +111,7 @@ function NavBar() {
                 <img
                   src={Logo}
                   alt="Mirakle"
-                  className="h-8 md:h-14 w-auto"
+                  className="w-24 h-auto"
                 />
               </Link>
             </div>

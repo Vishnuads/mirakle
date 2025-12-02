@@ -73,6 +73,7 @@ const SpecialOffers1 = () => {
                       src={product.images?.[0]}
                       alt={product.title}
                       className="product-img h-42 w-42"
+                      loading='lazy'
                     />
                     <button
                       onClick={(e) => {
