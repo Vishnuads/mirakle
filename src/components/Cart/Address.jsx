@@ -1,9 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
-import useForm from "@/hooks/useForm";
 import Validation from "@/Vallidations/Validation";
 import Back from "../../assets/icons/arrow-bend-up-left.svg";
-import BASE_URL from "@/Api";
-import axios from "axios";
 import { CartContext } from "@/context/CartContext";
 import toast from "react-hot-toast";
 import { AiOutlineClose } from "react-icons/ai";

@@ -10,13 +10,9 @@ import { CartContext } from '@/context/CartContext'
 
 const CartHome = () => {
     const { cartItems } = useContext(ProductListCreate);
-    // const [checked, setChecked] = useState(false);
     const [address, setAddress] = useState(false);
     const { addresses, loading } = useContext(CartContext)
     const [selectedAddressId, setSelectedAddressId] = useState(null);
-
-    // console.log(addresses);
-
 
     const getSubtotal = () => {
         return cartItems

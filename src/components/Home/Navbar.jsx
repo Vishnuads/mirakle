@@ -43,11 +43,6 @@ function NavBar() {
     setIsMobileMenuOpen(false);
   };
 
-  // const handleSearch = (e) => {
-  //   e.preventDefault();
-  //   console.log("Searching for:", searchQuery);
-  // };
-
   const loggedin = false
   const user = JSON.parse(localStorage.getItem("userEmail"));
   const token = localStorage.getItem("userToken");

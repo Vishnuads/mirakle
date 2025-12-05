@@ -1,18 +1,15 @@
 import React from "react";
-import {
-  FaPhoneAlt,
+import { 
   FaClock,
   FaMapMarkerAlt,
   FaFacebook,
   FaYoutube,
   FaEnvelope,
-  FaInstagram,
 } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { MdHeadsetMic } from "react-icons/md";
-
 import footerBg from "../../assets/images/footerbottombg.png";
-import logo from "../../assets/images/logo.png"; // your Mirakle logo
+import logo from "../../assets/images/logo.png"; 
 import './Footer.css'
 
 

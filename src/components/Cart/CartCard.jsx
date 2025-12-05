@@ -8,7 +8,7 @@ import toast from 'react-hot-toast';
 import { CartContext } from '@/context/CartContext';
 import '../../components/Home/Style.css'
 import { Heart } from 'phosphor-react';
-import { Checkbox } from "@/components/ui/checkbox"
+
 
 const CartCard = () => {
   const { cartItems, setCartItems, user, removeFromCart } = useContext(ProductListCreate);

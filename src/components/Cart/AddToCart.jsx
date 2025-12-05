@@ -1,31 +1,15 @@
 import { Minus, Plus, ShoppingCart, X } from 'phosphor-react'
-import React, { useState, useContext, useEffect } from 'react'
-import Pic from '../../assets/images/onion.png'
-import { CartContext } from '../../context/CartContext'
+import React, {  useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import {ProductListCreate} from "@/context/ClientContext"
 import { CheckOutDetailsCreate } from '@/context/CheckoutContext';
 import axios from 'axios'
 import BASE_URL from '@/Api'
 
-const AddToCart = () => {
+const AddToCart = () => { 
 
-    const {   removeProduct, updateQty, total } = useContext(CartContext);
-
-     const{cartItems,overlayVisiable,hideOverlay,removeFromCart,setCartItems,user}=useContext(ProductListCreate)
-       const { pendingCart, setPendingCart, setLoading } = useContext(CheckOutDetailsCreate);
-
-    const increaseQty = (item, index) => {
-            updateQty(index, item.qty + 1);
-        // onQuantityChange?.(product.id, newQty);
-    };
-
-    const decreaseQty = (item, index) => {
-        if (item.qty > 1) {
-            updateQty(index, item.qty - 1);
-        // onQuantityChange?.(product.id, newQty);
-        }
-    };
+    const { cartItems,overlayVisiable,hideOverlay,removeFromCart,setCartItems,user } = useContext(ProductListCreate)
+    const { pendingCart, setPendingCart, setLoading } = useContext(CheckOutDetailsCreate);
 
   // ✅ Change quantity
   const changeQuantity = (id, netQuantity, delta) => {

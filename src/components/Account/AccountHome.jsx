@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import ProductBg from '../Home/ProductBg'
-import { Check, Plus, User } from 'lucide-react'
+import { Trash2, Plus, User } from 'lucide-react'
 import Edit from '../../assets/icons/pencil-line.svg'
 import Address from '../Cart/Address'
 import Product from '../../assets/images/onion.png'
@@ -11,7 +11,6 @@ import { useNavigate } from 'react-router-dom'
 const AccountHome = () => {
     const { addresses, editAddressUser, deleteAddress, setAddressesUpdated, clearWishlistState } = useContext(CartContext)
     const [activeTab, setActiveTab] = useState("tab1");
-    const [edit, setEdit] = useState(true);
     const [address, setAddress] = useState(false);
     const navigate = useNavigate()
     const editClick = (id) => {
@@ -83,16 +82,6 @@ const AccountHome = () => {
                                 <div className="flex items-center justify-between">
                                     <p className='font-bold md:text-xl text-md'>Personal Information</p>
 
-                                    {/* {edit
-                                        ? <button onClick={() => setEdit(!edit)} className='flex  items-center gap-1 border-1 border-black px-3 py-1 rounded-4'>
-                                            <p className='text-sm'>Edit</p>
-                                            <img src={Edit} alt="Edit" className='w-5 h-5' />
-                                        </button>
-                                        : <button onClick={() => setEdit(!edit)} className='flex  items-center gap-1 bg-green-700 text-white  px-3 py-1 rounded-4'>
-                                            <p className='text-sm'>Save</p>
-                                            <Check />
-                                        </button>} */}
-
                                 </div>
                             </div>
                             <div className='grid md:grid-cols-3 gap-3 my-1'>
@@ -131,28 +120,11 @@ const AccountHome = () => {
                                 </div>
                             </div>
                             <div className="grid md:grid-cols-3 grid-cols-1 gap-3 my-1">
-                                {/* {addressList.map((a, idx) => (
-                                    <div key={idx}>
-                                        <div className="flex items-center justify-between bg-white py-2 px-3 rounded-3 mb-2">
-                                            <p className='font-bold'>{a.place}</p>
-                                            <button onClick={() => setAddress(true)} className='flex  items-center gap-1 border-1 border-black px-2 py-1 rounded-4'>
-                                                <p className='text-xs'>Edit</p>
-                                                <img src={Edit} alt="Edit" className='w-4 h-4' />
-                                            </button>
-                                        </div>
-                                        <div className="bg-white p-3 rounded-3">
-                                            <p className='font-bold'>{a.name}</p>
-                                            <p className='font-bold my-1 text-sm'>{a.phone}</p>
-                                            <p className='text-gray-400'>{a.address}</p>
-                                        </div>
-
-                                    </div>
-                                ))} */}
 
                                 {addresses.map((a, index) => (
                                     <div key={index}>
 
-                                        <div className="flex items-center justify-between bg-white py-3 px-4 rounded-3 mb-2 shadow-sm">
+                                        <div className="flex items-center justify-between bg-white py-3 px-4 rounded-3 mb-2 ">
                                             <p className="font-bold text-sm">{a.title}</p>
 
                                             <div className="flex items-center gap-2">
@@ -168,7 +140,7 @@ const AccountHome = () => {
                                                     className="flex  items-center gap-1 border-1 border-black px-2 py-1 rounded-4"
                                                 >
                                                     <p className="text-xs font-medium">Delete</p>
-                                                    {/* <img src={DeleteIcon} alt="Delete" className="w-4 h-4" /> */}
+                                                    <Trash2 className="w-4 h-4 text-gray-600" />
                                                 </button>
                                             </div>
                                         </div>
@@ -180,45 +152,6 @@ const AccountHome = () => {
                                     </div>
                                 ))}
                             </div>
-
-                            {/* {edit && (
-                                <>
-                                    <div className="my-3">
-                                        <div className="flex items-center justify-between">
-                                            <p className='font-bold md:text-xl text-md'>Personal Information</p>
-                                            <button onClick={() => setEdit(false)} className='flex  items-center gap-1 bg-green-700 text-white  px-3 py-1 rounded-4'>
-                                                <p className='text-sm'>Save</p>
-                                                <Check/>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div className='grid md:grid-cols-3 gap-3 my-1'>
-                                        <div className="mb-2">
-                                            <label htmlFor="name" className='block text-sm text-gray-500 mb-1'>
-                                                Name
-                                            </label>
-                                            <input
-                                                name='name'
-                                                type="text"
-                                                placeholder=''
-                                                className='bg-white w-full py-2 px-3 rounded-lg focus:outline-none focus:border-green-600 transition-colors'
-                                            />
-                                        </div>
-                                        <div className="mb-2">
-                                            <label htmlFor="email" className='block text-sm text-gray-500 mb-1'>
-                                                Email
-                                            </label>
-                                            <input
-                                                name='email'
-                                                type="email"
-                                                placeholder=''
-                                                className='bg-white w-full py-2 px-3 rounded-lg focus:outline-none focus:border-green-600 transition-colors'
-                                            />
-                                        </div>
-                                    </div>
-                                </>
-                            )} */}
-
 
                         </>
                         :
