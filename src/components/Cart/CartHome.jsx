@@ -86,7 +86,7 @@ const CartHome = () => {
                     <div className='min-h-[60vh] flex  justify-center items-center py-3 '>
                         <div className='text-center md:flex  items-center gap-5'>
                             <p className='text-xl text-gray-500  py-6 '>Your Cart is Empty</p>
-                            <div className='h-10 w-[1px] bg-black/50 hidden md:block'></div>
+                            <div className='h-10 w-px bg-black/50 hidden md:block'></div>
                             <Link to="/shop">
                                <p className='flex items-center gap-3 underline text-xl font-bold text-black rounded-3'>Countinue Shoping <LucideSquareArrowOutUpRight/> </p> 
                             </Link>

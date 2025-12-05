@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="container py-5">
         <div className="row  text-md-start gy-4 align-items-start">
           {/* 🟥 Logo & Text */}
-          <div className="col-md-3 gy-0">
+          <div className="col-md-3 gy-0 ">
             <img src={logo} alt="Mirakle Logo" width={150} className="footer-logo " />
             <p className="footer-text">
               The Essence Of Good Food.
@@ -39,7 +39,7 @@ export default function Footer() {
             </ul>
 
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 ">
             <h6 className="footer-heading">Support</h6>
             <ul className="ps-2 mt-2 links">
               <Link to="/terms">
@@ -65,7 +65,7 @@ export default function Footer() {
               <FaClock size={18} className="text-danger me-2 fa-contact shrink-0" />
               <span className="footer-contact-text">10 am - 6 pm</span>
             </div>
-            <div className="d-flex align-items-start f-address">
+            <div className="d-flex align-items-start ">
               <FaMapMarkerAlt className="text-danger me-2 fs-5 shrink-0 mt-1" />
               <p className="mb-0 footer-address-text">
                 Plot No: 24, Arunachalla Avenue,<br />
