@@ -293,6 +293,7 @@ function NavBar() {
             {/* Mobile Icons & Menu Button */}
             <div className="flex md:hidden items-center gap-3">
 
+{loggedIn && (
               <Link to="/cart">
                 <button className="text-black hover:text-green-100 transition-colors relative">
                   <img src={Cart} alt="cart" className="w-6 h-6" />
@@ -303,7 +304,7 @@ function NavBar() {
                     </span>}
                 </button>
               </Link>
-
+)}
               <div className="relative" ref={userMenuRef}>
                 {loggedIn ? (
                   <>
