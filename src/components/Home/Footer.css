@@ -64,9 +64,9 @@
   .footer-logo {
     margin: 0 auto;
   }
-  .footer-section {
+  /* .footer-section {
     text-align: center;
-  }
+  } */
   .footer-bg {
     margin-top: 0;
   }
@@ -116,7 +116,7 @@
 .footer-contact {
   color: #555;
   font-size: 0.95rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .footer-contact-text {
@@ -142,7 +142,17 @@
   margin-bottom: 0.75rem;
 }
 
-.footer-contact-title{
+/* .footer-contact-title{
     text-align:  center !important  ;
     justify-content: center;
+} */
+
+.links li:hover{
+  color: #dc2020;
+  cursor: pointer;
+  
+}
+
+.links li{
+  margin-bottom: 5px;
 }

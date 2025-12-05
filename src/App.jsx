@@ -18,29 +18,37 @@ import AddToCart from './components/Cart/AddToCart';
 import ChangePassword from './components/Login/ChangePassword';
 import { Toaster } from 'react-hot-toast';
 import Producted from './pages/Producted';
+import TC from './pages/TC';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import RefundPolicy from './pages/RefundPolicy';
+import Shipping from './pages/Shipping';
 
 function AppLayout() {
 
   return (
     <>
-        <Toaster
-  position="top-center"
-  reverseOrder={false}
-/>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/shop' element={<Shop />} />
-          <Route path='/about' element={<AboutUs />} />
-          <Route path='/cart' element={<Producted><Cart /></Producted>} />
-          <Route path='/cart/address' element={<Address />} />
-          <Route path='/products/:name/:title/:id' element={<ProductPage />} />
-          <Route path='/account' element={ <Producted><Account /> </Producted> } />
-          {/* <Route path='/login' element={ <Login/> } /> */}
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/wishlist' element={ <Producted><WishList /></Producted>} />
-           <Route path='/change/:token' element={<ChangePassword/> } />
-        </Routes>
-        <AddToCart/>
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+      />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/shop' element={<Shop />} />
+        <Route path='/about' element={<AboutUs />} />
+        <Route path='/cart' element={<Producted><Cart /></Producted>} />
+        <Route path='/cart/address' element={<Address />} />
+        <Route path='/products/:name/:title/:id' element={<ProductPage />} />
+        <Route path='/account' element={<Producted><Account /> </Producted>} />
+        {/* <Route path='/login' element={ <Login/> } /> */}
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/wishlist' element={<Producted><WishList /></Producted>} />
+        <Route path='/change/:token' element={<ChangePassword />} />
+        <Route path='/terms' element={<TC/>}/>
+       <Route path='/privacy' element={ <PrivacyPolicy/> }/>
+       <Route path='/refund' element={ <RefundPolicy/> }/>
+       <Route path='/shipping' element={ <Shipping/> }/>
+      </Routes>
+      <AddToCart />
     </>
   )
 }
