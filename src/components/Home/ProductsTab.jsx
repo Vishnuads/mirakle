@@ -76,7 +76,7 @@ const ProductsTab = () => {
   return (
     <div className="products-section container py-5 mt-3">
       <div className="d-flex align-items-end mb-4">
-        <h2 className="section-title mb-0">OUR PRODUCTS</h2>
+        <h1 className="section-title mb-0">OUR PRODUCTS</h1>
         <span className="section-index ms-2">
           {productData.length.toString().padStart(2, "0")}
         </span>

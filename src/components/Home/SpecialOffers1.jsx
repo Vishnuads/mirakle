@@ -46,7 +46,7 @@ const SpecialOffers1 = () => {
     <section className="special-offers py-5">
       <div className="container">
         <div className="d-flex align-items-end mb-4">
-          <h2 className="section-title mb-0">Special Offers</h2>
+          <h1 className="section-title mb-0">Special Offers</h1>
           <span className="section-index ms-2">
             {offerProducts.length.toString().padStart(2, "0")}
           </span>
