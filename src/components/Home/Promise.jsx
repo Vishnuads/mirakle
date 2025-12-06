@@ -16,7 +16,7 @@ export default function Promise() {
   return (
     <div className="container mt-3">
           <div className="text-center mb-4">
-        <h2 className="section-title">The Mirakle promise</h2>
+        <h1 className="section-title">The Mirakle promise</h1>
        
       </div>
       <div className="row text-center align-items-center g-4">
