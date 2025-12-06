@@ -12,94 +12,38 @@ const PrivacyPolicy = () => {
         <h1 className="text-3xl text-center font-bold mb-6 text-black">
           Privacy Policy
         </h1><br />
-        <p className="mb-6 text-center">( DUMMY CONTENT ) </p><br />
-       
-        <p className="mb-6">Last Updated: 2025</p><br />
+        <p><strong>Information We Collect</strong></p>
+        <br />
 
-        <p className="mb-6">
-          This Privacy Policy explains how <strong>MIRAKLE</strong> (“we”, “us”, “our”) collects, uses, and safeguards your personal information when you visit or purchase from our website.
-        </p>
- <br />
-        {/* Information We Collect */}
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">1. Information We Collect</h2>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>Personal information: Name, email, phone number, billing/shipping address</li>
-            <li>Payment details (processed securely through third-party gateways)</li>
-            <li>Order history</li>
-            <li>Device & browser information</li>
-            <li>Cookies and tracking data</li>
-          </ul>
-        </section>
+        <p><strong>Mirakle may collect:</strong></p>
+        <ul className="list-disc">
+          <li>Name, mobile number, email address</li>
+          <li>Delivery address</li>
+          <li>Payment details (processed securely through third-party gateways)</li>
+          <li>Usage data (cookies, analytics, browsing behavior)</li>
+        </ul>
+        <br />
+        <p><strong>How We Use Your Data</strong></p>
+        <ul className="list-disc">
+          <li>To process and deliver orders</li>
+          <li>To send order updates and support-related communication</li>
+          <li>To improve our website, product offerings, and customer experience</li>
+          <li>To send promotional messages (only with your permission)</li>
+        </ul>
+        <br />
+        <p><strong>Data Security</strong></p>
+        <ul className="list-disc">
+          <li>Payment card details are not stored by Mirakle.</li>
+          <li>Your data is not sold or shared with external parties except logistics partners for delivery.</li>
 
-        {/* How We Use Data */}
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">2. How We Use Your Information</h2>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>To process and deliver orders</li>
-            <li>To send order updates and notifications</li>
-            <li>To improve website performance</li>
-            <li>To personalize user experience</li>
-            <li>To comply with legal requirements</li>
-          </ul>
-        </section>
+        </ul>
+        <br />
+        <p> <strong>Cookies</strong> </p>
 
-        {/* Sharing Information */}
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">3. Sharing Your Information</h2>
-          <p>
-            We do not sell your data. We share information only with trusted partners such as:
-          </p>
-          <ul className="list-disc pl-6 space-y-1 mt-2">
-            <li>Payment gateways</li>
-            <li>Courier and delivery partners</li>
-            <li>Marketing and analytics tools</li>
-            <li>Legal authorities (if required)</li>
-          </ul>
-        </section>
-
-        {/* Cookies */}
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">4. Cookies & Tracking</h2>
-          <p>
-            We use cookies to enhance your shopping experience, analyze website traffic, and remember your preferences.
-          </p>
-        </section>
-
-        {/* Data Protection */}
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">5. Data Protection & Security</h2>
-          <p>
-            We implement industry-standard security measures to protect your personal information. However, no system is 100% secure.
-          </p>
-        </section>
-
-        {/* User Rights */}
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">6. Your Rights</h2>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>Access or update your personal information</li>
-            <li>Request deletion of your data</li>
-            <li>Withdraw consent for marketing</li>
-          </ul>
-        </section>
-
-        {/* Changes */}
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">7. Changes to This Policy</h2>
-          <p>
-            We may update this Privacy Policy periodically. Updated versions will be posted on this page.
-          </p>
-        </section>
-
-        {/* Contact */}
-        {/* <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">8. Contact Us</h2>
-          <p>
-            Email: <strong>[your@email.com]</strong> <br />
-            Phone: <strong>[your phone number]</strong>
-          </p>
-        </section> */}
+        <p>  Mirakle uses cookies to enhance site experience. You may disable them in browser settings.</p>
+        <br />
+        <p> <strong>Your Rights</strong> </p>
+        <p>You may request access, correction, or deletion of your personal data (excluding mandatory transaction records).</p>
       </div>
       <ProductBg />
       <Footer />

@@ -60,17 +60,6 @@ function NavBar() {
     }
   };
 
-  // useEffect(() => {
-  //   const handleClickOutside = (e) => {
-  //     if (userMenuRef.current && !userMenuRef.current.contains(e.target)) {
-  //       setUserMenuOpen(false);
-  //     }
-  //   };
-  //   document.addEventListener("mousedown", handleClickOutside);
-  //   return () => {
-  //     document.removeEventListener("mousedown", handleClickOutside);
-  //   };
-  // }, []);
 
   useEffect(() => {
     setUserMenuOpen(false);
@@ -251,7 +240,7 @@ function NavBar() {
 
                       {/* DROPDOWN */}
                       {userMenuOpen && (
-                        <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg py-2 z-50"onClick={(e)=> e.stopPropagation() } >
+                        <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg py-2 z-50" onClick={(e) => e.stopPropagation()} >
                           <p className="px-4 py-2 text-sm text-gray-800 border-b ">
                             Hi,{" "}
                             {user?.firstName
@@ -263,10 +252,10 @@ function NavBar() {
                               : ""}
                           </p>
                           <button
-                            onClick={()=> navigate("/account")}
+                            onClick={() => navigate("/account")}
                             className="w-full text-left px-4 py-2 text-sm hover:bg-gray-100"
                           >
-                          Account
+                            Account
                           </button>
 
                           <button
@@ -293,18 +282,18 @@ function NavBar() {
             {/* Mobile Icons & Menu Button */}
             <div className="flex md:hidden items-center gap-3">
 
-{loggedIn && (
-              <Link to="/cart">
-                <button className="text-black hover:text-green-100 transition-colors relative">
-                  <img src={Cart} alt="cart" className="w-6 h-6" />
+              {loggedIn && (
+                <Link to="/cart">
+                  <button className="text-black hover:text-green-100 transition-colors relative">
+                    <img src={Cart} alt="cart" className="w-6 h-6" />
 
-                  {cartItems.length > 0 &&
-                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center text-[10px]">
-                      {cartItems.length}
-                    </span>}
-                </button>
-              </Link>
-)}
+                    {cartItems.length > 0 &&
+                      <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center text-[10px]">
+                        {cartItems.length}
+                      </span>}
+                  </button>
+                </Link>
+              )}
               <div className="relative" ref={userMenuRef}>
                 {loggedIn ? (
                   <>
@@ -477,16 +466,16 @@ function NavBar() {
 
             {/* Mobile Bottom Icons */}
             <div className="flex items-center justify-around pt-4 border-t border-black">
-              {loggedIn && 
-              <Link to="/wishlist"  >
-                <button
-                className="text-black 
+              {loggedIn &&
+                <Link to="/wishlist"  >
+                  <button
+                    className="text-black 
                  hover:text-green-100 transition-colors flex  items-center gap-2">
-                  <img src={Heart1} alt="heart" className="w-6 h-6" />
-                  <p className="">Wishlist</p>
-                </button>
-              </Link>
-}
+                    <img src={Heart1} alt="heart" className="w-6 h-6" />
+                    <p className="">Wishlist</p>
+                  </button>
+                </Link>
+              }
             </div>
           </div>
         </div>

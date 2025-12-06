@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer className="footer-section position-relative">
       {/* 🔹 Top Footer Content */}
-      <div className="container py-5">
+      <div className="container py-5 px-4">
         <div className="row  text-md-start gy-4 align-items-start">
           {/* 🟥 Logo & Text */}
           <div className="col-md-3 gy-0 ">

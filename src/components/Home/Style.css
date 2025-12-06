@@ -78,6 +78,7 @@
   padding: 0 5%;
 }
 
+
 .offer-banner {
   position: relative;
   background-size: cover;
@@ -151,16 +152,21 @@ a {
 }
 @media (max-width: 768px) {
   .banner-content h1 {
-    font-size: 2rem;
+    font-size: 24px;
+    padding-bottom: 10px;
   }
 
   .banner-content p {
-    font-size: 1rem;
+    font-size: 14px;
   }
 
   .banner-content {
     max-width: 90%;
   }
+  .banner-slide {
+  min-height: fit-content;
+  padding: 25% 5%;
+}
 }
 
 .banner-swiper .swiper-wrapper {

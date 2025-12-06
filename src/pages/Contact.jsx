@@ -23,7 +23,8 @@ const Contact = () => {
                             <p className='mb-4 text-gray-500'>we love hearing from you! whether it’s a question, feedback, or just a hello - we’re here for you</p>
                             <div className='mb-3'>
                                 <p className='mb-2 text-gray-500'>Email : </p>
-                                <p className='font-bold'>mirakleproducts@gmail.com</p>
+                                 <p className='font-bold'> <a href="mailto:support@mirakle.com" target='_blank'>
+                              support@mirakle.com</a></p>
                             </div>
                             <div className='mb-3'>
                                 <p className='mb-2 text-gray-500'>Phone :</p>
@@ -32,6 +33,15 @@ const Contact = () => {
                             <div className='mb-4'>
                                 <p className='mb-2 text-gray-500'>Customer Care Hours : </p>
                                 <p className='font-bold'>Mon - Sat | 10 am - 6 pm</p>
+                            </div>
+                            <div className='mb-4'>
+                                <p className='mb-2 text-gray-500'>Registered Address : </p>
+                                <p className='font-bold'>MIRAKLE</p>
+                                <p className='font-bold'>Plot No: 24, Arunachalla Avenue,
+                                     Paraniputhur Main Road,
+                                     Iyyapanthangal,
+                                    Chennai - 600 122, Tamilnadu, India</p>
+                                  
                             </div>
                             <p className='text-gray-500'>we aim to respond to all queries within 24-48 business hours</p>
 
@@ -47,7 +57,7 @@ const Contact = () => {
                                             onChange={contactChange}
                                             value={contactData.firstName}
                                             className='bg-gray-100 rounded-3  border px-3 h-10 w-full text-sm ' />
-                                            {errors.firstName && <p className='text-red-600 text-xs mt-1'>{errors.firstName}</p>}
+                                        {errors.firstName && <p className='text-red-600 text-xs mt-1'>{errors.firstName}</p>}
                                     </div>
                                     <div>
                                         <label htmlFor="lastName" className='mb-1'>Last Name</label>
@@ -57,7 +67,7 @@ const Contact = () => {
                                             onChange={contactChange}
                                             value={contactData.lastName}
                                             className='bg-gray-100 rounded-3 border px-3 h-10 w-full' />
-                                            {errors.lastName && <p className='text-red-600 text-xs mt-1'>{errors.lastName}</p>}
+                                        {errors.lastName && <p className='text-red-600 text-xs mt-1'>{errors.lastName}</p>}
                                     </div>
                                 </div>
                                 <div className='mb-2'>
@@ -68,7 +78,7 @@ const Contact = () => {
                                         onChange={contactChange}
                                         value={contactData.phone}
                                         className='bg-gray-100 rounded-3 border px-3 h-10 w-full' />
-                                        {errors.phone && <p className='text-red-600 text-xs mt-1'>{errors.phone}</p>}
+                                    {errors.phone && <p className='text-red-600 text-xs mt-1'>{errors.phone}</p>}
                                 </div>
                                 <div className='mb-2' >
                                     <label className='mb-1' htmlFor="gmail">Email</label>
@@ -78,7 +88,7 @@ const Contact = () => {
                                         onChange={contactChange}
                                         value={contactData.gmail}
                                         className='bg-gray-100 rounded-3 border px-3 h-10 w-full' />
-                                        {errors.gmail && <p className='text-red-600 text-xs mt-1'>{errors.gmail}</p>}
+                                    {errors.gmail && <p className='text-red-600 text-xs mt-1'>{errors.gmail}</p>}
                                 </div>
                                 <div className='mb-2'>
                                     <label htmlFor="message" className='mb-1'>How Can We Help You?</label>
@@ -88,7 +98,7 @@ const Contact = () => {
                                         onChange={contactChange}
                                         value={contactData.message}
                                         className='bg-gray-100 rounded-3 border px-3 w-full h-24 py-1' />
-                                        {errors.message && <p className='text-red-600 text-xs mt-1'>{errors.message}</p>}
+                                    {errors.message && <p className='text-red-600 text-xs mt-1'>{errors.message}</p>}
                                 </div>
                                 <button type="submit" className='btn-buy text-center py-2 w-full bg-[#56750A] text-white rounded-3 my-2 '><p>Send Message</p> </button>
                             </form>

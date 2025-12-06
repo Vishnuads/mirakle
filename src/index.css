@@ -28,7 +28,7 @@ input[type=checkbox]{
   border: 1px solid #56750A;
 }
 
-p,Label, .qty, h2, li{
+p,Label, .qty, h2, li, strong{
   font-family: "Montserrat" !important;
 }
 h2{

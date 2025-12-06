@@ -60,7 +60,7 @@ const Shop = () => {
       <SectionBanner title="Shop" />
 
       <div className="bg-[#F6F6F6] w-full">
-        <section className='max-w-6xl mx-auto py-4'>
+        <section className='md:max-w-6xl md:mx-auto py-4'>
 
           {/* HEADER — PRODUCT COUNT + DROPDOWN */}
           <div className="flex gap-3 items-center justify-between my-4 px-3 relative">
