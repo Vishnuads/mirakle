@@ -13,7 +13,7 @@ import AddToCart from '@/components/Cart/AddToCart'
 export default function Home() {
   return (
     <>
-    <CartProvider>
+    {/* <CartProvider> */}
       <Navbar />
       <section className='bg-[#F6F6F6]'>
       <HomeBanner />
@@ -27,7 +27,7 @@ export default function Home() {
      
       <AddToCart/>
      
-      </CartProvider>
+      {/* </CartProvider> */}
     </>
   )
 }

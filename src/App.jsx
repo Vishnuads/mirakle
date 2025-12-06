@@ -6,7 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'swiper/css';
 import ProductPage from './pages/ProductPage';
 import ScrollToTop from './pages/ScrollTop';
-import Shop from './pages/Shop';
+import Shop from './pages/Shop1';
 import Login from './components/Login/Login';
 import Cart from './pages/Cart';
 import Address from './components/Cart/Address';

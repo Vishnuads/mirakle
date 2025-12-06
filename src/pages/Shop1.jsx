@@ -9,7 +9,7 @@ import { ProductListCreate } from '@/context/ClientContext'
 import { CartContext } from '../context/CartContext'
 import { CaretDown } from 'phosphor-react'
 
-const Shop = () => {
+const Shop1 = () => {
 
   const { productData, productCategory } = useContext(mainContext);
   const { addToCart } = useContext(ProductListCreate);
@@ -54,6 +54,13 @@ const Shop = () => {
           p.productName?.toLowerCase() === selectedTab.toLowerCase()
       );
 
+ 
+  const handleTabSelect = (tabName) => {
+    setSelectedTab(tabName);
+    // Remove focus to close dropdown
+    document.activeElement.blur();
+  };
+
   return (
     <>
       <NavBar />
@@ -62,20 +69,31 @@ const Shop = () => {
       <div className="bg-[#F6F6F6] w-full">
         <section className='md:max-w-6xl md:mx-auto py-4'>
 
-          
+          {/* HEADER — PRODUCT COUNT + DROPDOWN */}
           <div className="flex gap-3 items-center justify-between my-4 px-3 relative">
-            <h1>Products</h1>
+            <h1 className="text-base md:text-xl">Products</h1>
 
-            <div className="dropdown dropdown-end  text-black">
-              <div tabIndex={0} role="button" className="btn m-1 bg-white shadow-none border rounded-5"><p className='flex items-center gap-2'>{selectedTab} <CaretDown/></p></div>
-              <ul tabIndex="-1" className="dropdown-content menu bg-white rounded-box z-1 w-52 p-2 shadow-md   ">
-                 {productCategory.map((tab, id) => (
+            <div className="dropdown dropdown-end text-black">
+              <div 
+                tabIndex={0} 
+                role="button" 
+                className="btn m-1 bg-white shadow-none border rounded-5 min-h-0 h-auto py-2 px-3"
+              >
+                <p className='flex items-center gap-2 mb-0 text-sm md:text-base truncate max-w-[120px] md:max-w-none'>
+                  {selectedTab} <CaretDown className="flex-shrink-0" />
+                </p>
+              </div>
+              <ul 
+                tabIndex={0} 
+                className="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow-md"
+              >
+                {productCategory.map((tab, id) => (
                   <li
                     key={id}
-                    onClick={() => setSelectedTab(tab.productName)}
-                    className=' hover:bg-gray-100  text-sm rounded-2 cursor-pointer'
+                    onClick={() => handleTabSelect(tab.productName)}
+                    className='hover:bg-gray-100 text-sm rounded-2 cursor-pointer'
                   >
-                   <p className='mb-0 '>{tab.productName}</p> 
+                    <p className='mb-0'>{tab.productName}</p> 
                   </li>
                 ))}
               </ul>
@@ -130,4 +148,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default Shop1;
